@@ -1,0 +1,1 @@
+Python implementation of an approximate Euclidean bipartite matching algorithm proposed by a 2004 paper [A Near-Linear Constant-Factor Approximation for Euclidean Bipartite Matching?](https://dl.acm.org/doi/10.1145/997817.997856) by Pankaj Agarwal and Kasturi Varadarajan.
