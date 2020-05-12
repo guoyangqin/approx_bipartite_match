@@ -6,7 +6,7 @@ class ExactEuclideanBipartiteMatch:
     def __init__(self, node_set):
         self.pos_1, self.pos_2 = node_set
 
-    def bipartite_match(self, islonlat, distance_category='manhattan'):
+    def match(self, islonlat=False, distance_category='euclidean'):
         # pos_1 and pos_2 are both two-column numpy array
         # denoting the longitude and latitude coordinates
         # distance_category = ['manhattan', 'euclidean']

@@ -24,7 +24,7 @@ def get_distance(dx, dy, how='manhattan'):
     return dist_mat
 
 
-def get_dist_mat(pos_1, pos_2, islonlat, how='manhattan'):
+def get_dist_mat(pos_1, pos_2, islonlat, how='euclidean'):
     pos_diff_list = []
     for i in range(2):
         pos = np.meshgrid(pos_2[:, i], pos_1[:, i])
