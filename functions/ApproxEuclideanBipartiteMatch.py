@@ -1,3 +1,4 @@
+import networkx as nx
 from functions.ExactEuclideanBipartiteMatch import *
 from functions.get_dist_matrix import *
 
@@ -153,8 +154,6 @@ class ApproxEuclideanBipartiteMatch:
                 result_ind_2_array = np.array([])
 
                 for i, cell in enumerate(cell_bounds):
-                    num = len(cell_bounds)
-
                     pos_1_ind_in_cell = self.find_node_in_cell(sub_pos_1, cell)
                     pos_2_ind_in_cell = self.find_node_in_cell(sub_pos_2, cell)
 
@@ -222,8 +221,48 @@ class ApproxEuclideanBipartiteMatch:
         return result_bipartite_distance_array, avg_distance, output_ind_1, output_ind_2
 
     def compute_alpha(self):
-        # TODO
-        alpha = 0.1
+        i_star = 0
+        # Total number of nodes
+        N = len(self.pos_1) + len(self.pos_2)
+        print('0000')
+        # Compute Minimum Spanning Tree (MST)
+        all_nodes = np.concatenate((self.pos_1, self.pos_2), axis=0)
+        A = get_dist_mat(all_nodes, all_nodes, islonlat=False)
+        print('0001')
+        G = nx.from_numpy_matrix(A)  # too slow
+        print('0002')
+        T = nx.minimum_spanning_tree(G)  # too slow
+        print('0003')
+        tree_list = [[(r[0], r[1]), r[2]['weight']] for r in sorted(T.edges(data=True))]
+        tree_list = sorted(tree_list, key=lambda x: x[-1])
+
+        for i in range(1, len(tree_list) + 1):
+            # Create edge-induced subgraph
+            subgraph_edges = [r[0] for r in tree_list[:i]]
+            S = nx.Graph(subgraph_edges)
+            component = list(nx.connected_component_subgraphs(S))
+
+            # print(i, len(component))
+            equal_num_of_both_parties = True
+
+            for j, c in enumerate(component):
+                edges = np.array(list(c.edges))
+                nodes_array = np.unique(edges.flatten())
+
+                if len(nodes_array) % 2 == 1 or np.sum(nodes_array < (N / 2)) != np.sum(nodes_array >= (N / 2)):
+                    equal_num_of_both_parties = False
+                    # print('[%d/%d] Component %s doesn\'t include same number of both parties (nodes %s)'
+                    #       % (j, len(component), list(c.edges), nodes_array))
+                    break
+
+            if equal_num_of_both_parties:  # i_star found
+                i_star = i - 1
+                break
+
+        alpha = tree_list[i_star][-1]
+
+        print('alpha=%0.5f, i*=%d, num_of_components=%d' % (alpha, i_star, len(component)))
+
         return alpha
 
     def create_grid(self, grid_delta):

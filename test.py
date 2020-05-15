@@ -10,7 +10,7 @@ plt.rcParams['svg.fonttype'] = 'none'
 figure, axes = plt.subplots(1, 2, figsize=(16, 8))
 
 # Generate nodes
-N = 5000
+N = 50
 epsilon = 0.90  # [0,1], The bigger the longer expected time, but more accurate
 
 node_set = [np.random.uniform(0, 10, (N, 2)), np.random.uniform(0, 10, (N, 2))]
@@ -29,7 +29,7 @@ duration = time.time() - start_time
 ax = axes[0]
 ax.set_title(
     'Exact Euclidean bipartite matching\n N=%d, eps=%0.2f, avg_min_cost=%0.2f, runtime=%0.2fs' % (
-    N, epsilon, avg_distance, duration))
+        N, epsilon, avg_distance, duration))
 
 node_pair = zip(node_set[0][ind_1, :], node_set[1][ind_2, :])
 for r, b in node_pair:
