@@ -1,5 +1,4 @@
 from lapsolver import solve_dense
-from functions.get_dist_matrix import *
 
 
 class ExactEuclideanBipartiteMatch:

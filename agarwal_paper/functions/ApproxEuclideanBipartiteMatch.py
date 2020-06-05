@@ -1,6 +1,4 @@
 import networkx as nx
-from functions.ExactEuclideanBipartiteMatch import *
-from functions.get_dist_matrix import *
 
 
 class ApproxEuclideanBipartiteMatch:

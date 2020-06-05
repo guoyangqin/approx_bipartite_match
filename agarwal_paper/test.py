@@ -1,5 +1,5 @@
-from functions.ExactEuclideanBipartiteMatch import ExactEuclideanBipartiteMatch
-from functions.ApproxEuclideanBipartiteMatch import ApproxEuclideanBipartiteMatch
+from agarwal_paper.functions import ExactEuclideanBipartiteMatch
+from agarwal_paper.functions import ApproxEuclideanBipartiteMatch
 import numpy as np
 import matplotlib.pyplot as plt
 import time
