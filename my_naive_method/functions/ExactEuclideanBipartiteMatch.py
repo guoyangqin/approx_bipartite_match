@@ -1,5 +1,5 @@
 from lapsolver import solve_dense
-from agarwal_paper.functions.get_dist_matrix import *
+from my_naive_method.functions.get_dist_matrix import *
 
 
 class ExactEuclideanBipartiteMatch:
