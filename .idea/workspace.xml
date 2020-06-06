@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dbd0c1c-b890-4741-8ecd-82db45af22ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my_naive_method/functions/ApproxEuclideanBipartiteMatch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_naive_method/functions/ExactEuclideanBipartiteMatch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_naive_method/functions/get_dist_matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/approx_bipartite_match.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/approx_bipartite_match.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agarwal_paper/functions/ApproxEuclideanBipartiteMatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/agarwal_paper/functions/ApproxEuclideanBipartiteMatch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agarwal_paper/functions/ExactEuclideanBipartiteMatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/agarwal_paper/functions/ExactEuclideanBipartiteMatch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_naive_method/functions/ApproxEuclideanBipartiteMatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_naive_method/functions/ApproxEuclideanBipartiteMatch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_naive_method/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_naive_method/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +18,8 @@
   <component name="ProjectId" id="1bD0Z2w9i1Pj13LuRxLUDnZ9eCU" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/my_naive_method/functions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -88,6 +83,7 @@
       <workItem from="1591358566973" duration="134000" />
       <workItem from="1591358748489" duration="1516000" />
       <workItem from="1591360340052" duration="665000" />
+      <workItem from="1591430183035" duration="3723000" />
     </task>
     <servers />
   </component>
@@ -108,6 +104,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/approx_bipartite_match$test.coverage" NAME="test Coverage Results" MODIFIED="1591361020770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_naive_method" />
+    <SUITE FILE_PATH="coverage/approx_bipartite_match$test.coverage" NAME="test Coverage Results" MODIFIED="1591433791316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_naive_method" />
   </component>
 </project>
