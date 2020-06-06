@@ -20,6 +20,8 @@ def get_distance(dx, dy, how='manhattan'):
         dist_mat = np.abs(dx) + np.abs(dy)
     elif how == 'euclidean':
         dist_mat = np.sqrt(dx ** 2 + dy ** 2)
+    elif how == 'L_infty_norm':
+        dist_mat = np.maximum(np.abs(dx), np.abs(dy))
 
     return dist_mat
 

@@ -10,7 +10,7 @@ plt.rcParams['svg.fonttype'] = 'none'
 figure, axes = plt.subplots(1, 2, figsize=(16, 8))
 
 # Generate nodes
-N = 50
+N = 2000
 epsilon = 0.90  # [0,1], The bigger the longer expected time, but more accurate
 
 node_set = [np.random.uniform(0, 10, (N, 2)), np.random.uniform(0, 10, (N, 2))]

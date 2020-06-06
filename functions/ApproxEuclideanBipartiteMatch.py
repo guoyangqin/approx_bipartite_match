@@ -1,7 +1,7 @@
 import networkx as nx
 from functions.ExactEuclideanBipartiteMatch import *
 from functions.get_dist_matrix import *
-
+from functions.minimum_spanning_tree import *
 
 class ApproxEuclideanBipartiteMatch:
     def __init__(self, node_set, epsilon, C):
@@ -221,19 +221,20 @@ class ApproxEuclideanBipartiteMatch:
         return result_bipartite_distance_array, avg_distance, output_ind_1, output_ind_2
 
     def compute_alpha(self):
+        return 0.01
+
         i_star = 0
         # Total number of nodes
         N = len(self.pos_1) + len(self.pos_2)
-        print('0000')
+
         # Compute Minimum Spanning Tree (MST)
         all_nodes = np.concatenate((self.pos_1, self.pos_2), axis=0)
+
         A = get_dist_mat(all_nodes, all_nodes, islonlat=False)
-        print('0001')
-        G = nx.from_numpy_matrix(A)  # too slow
-        print('0002')
-        T = nx.minimum_spanning_tree(G)  # too slow
-        print('0003')
-        tree_list = [[(r[0], r[1]), r[2]['weight']] for r in sorted(T.edges(data=True))]
+
+        R = minimum_spanning_tree(A)
+        tree_list = [[(r[0], r[1]), A[r[0], r[1]]] for r in R]
+
         tree_list = sorted(tree_list, key=lambda x: x[-1])
 
         for i in range(1, len(tree_list) + 1):
