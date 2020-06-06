@@ -1,4 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9dbd0c1c-b890-4741-8ecd-82db45af22ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/my_naive_method/functions/ApproxEuclideanBipartiteMatch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_naive_method/functions/ExactEuclideanBipartiteMatch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_naive_method/functions/get_dist_matrix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/approx_bipartite_match.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/approx_bipartite_match.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agarwal_paper/functions/ApproxEuclideanBipartiteMatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/agarwal_paper/functions/ApproxEuclideanBipartiteMatch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agarwal_paper/functions/ExactEuclideanBipartiteMatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/agarwal_paper/functions/ExactEuclideanBipartiteMatch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_naive_method/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_naive_method/test.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1bD0Z2w9i1Pj13LuRxLUDnZ9eCU" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/my_naive_method/functions" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OneDrive\Surface\projects\limos\optimal-matching-window-size\code\python\approx_bipartite_match\my_naive_method\functions" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="approx_bipartite_match" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/my_naive_method" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/my_naive_method/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9dbd0c1c-b890-4741-8ecd-82db45af22ea" name="Default Changelist" comment="" />
+      <created>1591350209663</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591350209663</updated>
+      <workItem from="1591350210950" duration="12000" />
+      <workItem from="1591350241906" duration="8124000" />
+      <workItem from="1591358566973" duration="134000" />
+      <workItem from="1591358748489" duration="1516000" />
+      <workItem from="1591360340052" duration="665000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/approx_bipartite_match$test.coverage" NAME="test Coverage Results" MODIFIED="1591361020770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/my_naive_method" />
+  </component>
 </project>

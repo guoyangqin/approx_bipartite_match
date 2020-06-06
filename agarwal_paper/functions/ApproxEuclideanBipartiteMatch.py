@@ -1,7 +1,12 @@
 import networkx as nx
+<<<<<<< HEAD:functions/ApproxEuclideanBipartiteMatch.py
 from functions.ExactEuclideanBipartiteMatch import *
 from functions.get_dist_matrix import *
 from functions.minimum_spanning_tree import *
+=======
+from agarwal_paper.functions.ExactEuclideanBipartiteMatch import *
+
+>>>>>>> master:agarwal_paper/functions/ApproxEuclideanBipartiteMatch.py
 
 class ApproxEuclideanBipartiteMatch:
     def __init__(self, node_set, epsilon, C):

@@ -1,4 +1,4 @@
-from functions.ApproxEuclideanBipartiteMatch import ApproxEuclideanBipartiteMatch
+from agarwal_paper.functions import ApproxEuclideanBipartiteMatch
 import numpy as np
 import networkx as nx
 
