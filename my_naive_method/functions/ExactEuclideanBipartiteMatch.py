@@ -20,7 +20,6 @@ class ExactEuclideanBipartiteMatch:
 
         dist_mat_float = dist_mat.astype('float32')
         ind_1, ind_2 = solve_dense(dist_mat_float)
-
         bipartite_distance_array = dist_mat[ind_1, ind_2]
 
         avg_distance = np.mean(bipartite_distance_array)
